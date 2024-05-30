@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TI8KhLiYakijZMxES3Z6wSpAhgwWLzjo+71aeIdR0zE=",
+  "Source": "JobSearchWebApi.WebApi",
+  "BasePath": "_content/JobSearchWebApi.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
