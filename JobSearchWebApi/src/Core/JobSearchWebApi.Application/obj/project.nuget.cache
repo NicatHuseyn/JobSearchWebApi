@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oool8jecQ+CIpsqvVtqxYmNDAjZUgW2FHVQetzmSfH1Stqsz5F01LmAB0FJimbM63byIy3twsfyoqaJke3W5IQ==",
+  "dgSpecHash": "W27ERLfTrjZz3kBY4o2LUWLCiFDIlOTAutHvWEE6CC1CN5aA8i2m/OJ0hlja4fBdG01foJd4JWmd11T9gKo0UA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicat\\OneDrive\\Рабочий стол\\JobSearchWebApi\\JobSearchWebApi\\src\\Core\\JobSearchWebApi.Application\\JobSearchWebApi.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Nicat\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\Nicat\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Nicat\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\Nicat\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.5\\microsoft.entityframeworkcore.8.0.5.nupkg.sha512",
     "C:\\Users\\Nicat\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.5\\microsoft.entityframeworkcore.abstractions.8.0.5.nupkg.sha512",
     "C:\\Users\\Nicat\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.5\\microsoft.entityframeworkcore.analyzers.8.0.5.nupkg.sha512",
@@ -16,5 +19,16 @@
     "C:\\Users\\Nicat\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\Nicat\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.2.0 was resolved.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

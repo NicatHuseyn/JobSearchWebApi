@@ -1,4 +1,5 @@
 
+using JobSearchWebApi.Application;
 using JobSearchWebApi.Persistence;
 using JobSearchWebApi.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,7 @@ namespace JobSearchWebApi.WebApi
 
             #region My Services
             builder.Services.AddPersistenceService();
+            builder.Services.AddApplicationService();
             #endregion
 
             builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
