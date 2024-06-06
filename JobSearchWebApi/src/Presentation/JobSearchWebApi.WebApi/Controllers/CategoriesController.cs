@@ -1,4 +1,4 @@
-﻿using JobSearchWebApi.Application.Features.Commands.CategoryCommand.CreateCategory;
+﻿ using JobSearchWebApi.Application.Features.Commands.CategoryCommand.CreateCategory;
 using JobSearchWebApi.Application.Features.Commands.CategoryCommand.RemoveCategory;
 using JobSearchWebApi.Application.Features.Commands.CategoryCommand.UpdateCategory;
 using JobSearchWebApi.Application.Features.Queries.CategoryQuery.GetAllCategory;

@@ -75,7 +75,7 @@ namespace JobSearchWebApi.WebApi.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateCompany(CreateCompanyCommandRequest request)
+        public async Task<IActionResult> CreateCompany([FromBody]CreateCompanyCommandRequest request)
         {
             if (!ModelState.IsValid)
             {

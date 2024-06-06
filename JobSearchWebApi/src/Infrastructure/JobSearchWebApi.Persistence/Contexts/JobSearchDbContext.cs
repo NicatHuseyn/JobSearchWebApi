@@ -1,5 +1,8 @@
 ﻿using JobSearchWebApi.Domain.Entities;
 using JobSearchWebApi.Domain.Entities.Common;
+using JobSearchWebApi.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JobSearchWebApi.Persistence.Contexts
 {
-    public class JobSearchDbContext:DbContext
+    public class JobSearchDbContext:IdentityDbContext<AppUser,AppRole,int>
     {
         public JobSearchDbContext(DbContextOptions<JobSearchDbContext> options):base(options)
         {

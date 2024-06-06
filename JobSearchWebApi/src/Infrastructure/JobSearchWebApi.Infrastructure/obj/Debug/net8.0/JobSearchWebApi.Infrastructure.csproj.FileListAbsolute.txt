@@ -1,8 +1,3 @@
-C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.AssemblyInfo.cs
-C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.sourcelink.json
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\bin\Debug\net8.0\JobSearchWebApi.Infrastructure.deps.json
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\bin\Debug\net8.0\JobSearchWebApi.Infrastructure.dll
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\bin\Debug\net8.0\JobSearchWebApi.Infrastructure.pdb
@@ -11,6 +6,11 @@ C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\bin\Debug\net8.0\JobSearchWebApi.Application.pdb
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\bin\Debug\net8.0\JobSearchWebApi.Domain.pdb
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.AssemblyInfo.cs
+C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.sourcelink.json
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.csproj.CopyComplete
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\JobSearchWebApi.Infrastructure.dll
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Infrastructure\JobSearchWebApi.Infrastructure\obj\Debug\net8.0\refint\JobSearchWebApi.Infrastructure.dll

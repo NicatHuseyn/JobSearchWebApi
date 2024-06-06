@@ -10,3 +10,4 @@ C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Core\JobSearchWebApi.Domain\obj\Debug\net8.0\refint\JobSearchWebApi.Domain.dll
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Core\JobSearchWebApi.Domain\obj\Debug\net8.0\JobSearchWebApi.Domain.pdb
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Core\JobSearchWebApi.Domain\obj\Debug\net8.0\ref\JobSearchWebApi.Domain.dll
+C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Core\JobSearchWebApi.Domain\obj\Debug\net8.0\JobSearchWebApi.Domain.csproj.AssemblyReference.cache

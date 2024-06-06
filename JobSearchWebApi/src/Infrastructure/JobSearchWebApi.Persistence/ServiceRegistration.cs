@@ -1,8 +1,10 @@
-﻿using HotelierProject.Persistence;
+﻿using FluentValidation;
+using HotelierProject.Persistence;
 using JobSearchWebApi.Application.Repositories.CategroyRepository;
 using JobSearchWebApi.Application.Repositories.CompanyRepository;
 using JobSearchWebApi.Application.Repositories.IndustryRepository;
 using JobSearchWebApi.Application.Repositories.JobRepository;
+using JobSearchWebApi.Domain.Entities.Identity;
 using JobSearchWebApi.Persistence.Contexts;
 using JobSearchWebApi.Persistence.Repositories.CategoryRepository;
 using JobSearchWebApi.Persistence.Repositories.CompanyRepository;
@@ -24,10 +26,21 @@ namespace JobSearchWebApi.Persistence
         {
             services.AddDbContext<JobSearchDbContext>(option=>option.UseSqlServer(Configuration.ConnectionString));
 
+            services.AddIdentity<AppUser, AppRole>(options=>
+            {
+                options.Password.RequiredLength = 5;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireDigit = false;
+            }
+            ).AddEntityFrameworkStores<JobSearchDbContext>();
+
             services.AddScoped<ICategoryRepsoitory,CategoryRepository>();
             services.AddScoped<ICompanyRepository,CompanyRepository>();
             services.AddScoped<IIndustryRepository,IndustryRepository>();
             services.AddScoped<IJobRepository,JobRepository>();
+
         }
     }
 }

@@ -15,5 +15,7 @@ namespace JobSearchWebApi.Application.Features.Queries.CompanyQuery.GetAllCompan
         public string WebSiteUrl { get; set; }
         public string Address { get; set; }
         public string Icon { get; set; }
+        public DateTime CreateData { get; set; }
+        public DateTime UpdateDate { get; set; }
     }
 }

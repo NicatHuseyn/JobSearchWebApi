@@ -16,6 +16,8 @@ namespace JobSearchWebApi.Application.Features.Queries.CompanyQuery.GetByIdCompa
         public string Address { get; set; }
         public string Icon { get; set; }
 
+        public DateTime CreateData { get; set; }
+        public DateTime UpdateDate { get; set; }
         public bool Success { get; set; }
         public string Message { get; set; }
     }
