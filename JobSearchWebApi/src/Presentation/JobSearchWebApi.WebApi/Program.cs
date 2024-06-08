@@ -5,10 +5,14 @@ using JobSearchWebApi.Application.Features.Commands.CategoryCommand.CreateCatego
 using JobSearchWebApi.Application.Features.Commands.CompanyCommand.CreateCompany;
 using JobSearchWebApi.Application.Validators.IndustryValidator;
 using JobSearchWebApi.Application.Validators.JobValidator;
+using JobSearchWebApi.Infrastructure;
 using JobSearchWebApi.Infrastructure.Filters;
 using JobSearchWebApi.Persistence;
 using JobSearchWebApi.Persistence.Contexts;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace JobSearchWebApi.WebApi
 {
@@ -23,6 +27,7 @@ namespace JobSearchWebApi.WebApi
             #region My Services
             builder.Services.AddPersistenceService();
             builder.Services.AddApplicationService();
+            builder.Services.AddInfrastructureService();
             #endregion
 
             builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
@@ -42,6 +47,22 @@ namespace JobSearchWebApi.WebApi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer("Admin",options =>
+                {
+                    options.TokenValidationParameters = new()
+                    {
+                        ValidateAudience = true,
+                        ValidateIssuer = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+
+                        ValidAudience = builder.Configuration["Token:Auidence"],
+                        ValidIssuer = builder.Configuration["Token:Issure"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"]))
+                    };
+                });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -55,6 +76,8 @@ namespace JobSearchWebApi.WebApi
 
             app.UseHttpsRedirection();
 
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

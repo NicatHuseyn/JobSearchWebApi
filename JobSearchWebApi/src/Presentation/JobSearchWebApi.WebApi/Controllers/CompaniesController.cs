@@ -6,6 +6,7 @@ using JobSearchWebApi.Application.Features.Commands.CompanyCommand.UpdateCompany
 using JobSearchWebApi.Application.Features.Queries.CompanyQuery.GetAllCompany;
 using JobSearchWebApi.Application.Features.Queries.CompanyQuery.GetByIdCompany;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,6 +14,7 @@ namespace JobSearchWebApi.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Admin")]
     public class CompaniesController : ControllerBase
     {
         private readonly IMediator _mediator;

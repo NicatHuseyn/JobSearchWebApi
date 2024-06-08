@@ -1,4 +1,6 @@
-﻿using JobSearchWebApi.Domain.Entities.Identity;
+﻿using JobSearchWebApi.Application.Abstractions.Token;
+using JobSearchWebApi.Application.DTOs.TokenDtos;
+using JobSearchWebApi.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -14,11 +16,13 @@ namespace JobSearchWebApi.Application.Features.Commands.UserCommand.LoginUser
 
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly ITokenHandler _tokenHandler;
 
-        public LoginUserCommandHandler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        public LoginUserCommandHandler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenHandler tokenHandler)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _tokenHandler = tokenHandler;
         }
 
         public async Task<LoginUserCommandResponse> Handle(LoginUserCommandRequest request, CancellationToken cancellationToken)
@@ -30,18 +34,42 @@ namespace JobSearchWebApi.Application.Features.Commands.UserCommand.LoginUser
                 return new LoginUserCommandResponse
                 {
                     Success = false,
-                    Message = "User Not Found"
+                    Message = "Check your username"
                 };
             }
 
-            SignInResult result = await _signInManager.CheckPasswordSignInAsync(user, request.Password,false);
-
-            if (result.Succeeded)
+            try
             {
-               //
+                SignInResult result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
+
+                if (result.Succeeded)
+                {
+                    Token token = _tokenHandler.CreateAccessToken();
+                    return new LoginUserCommandResponse
+                    {
+                        Token = token,
+                        Success = true,
+                        Message = "Success token"
+                    };  
+                }
+                else
+                {
+                    return new LoginUserCommandResponse
+                    {
+                        Success = false,
+                        Message = "Check your password"
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                return new LoginUserCommandResponse
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
             }
 
-            return new();
         }
     }
 }

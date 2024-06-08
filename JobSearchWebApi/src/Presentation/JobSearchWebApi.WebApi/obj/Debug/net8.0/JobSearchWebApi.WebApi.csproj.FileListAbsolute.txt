@@ -155,3 +155,4 @@ C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Presentation\JobSearchWebApi.WebApi\obj\Debug\net8.0\JobSearchWebApi.WebApi.pdb
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Presentation\JobSearchWebApi.WebApi\obj\Debug\net8.0\JobSearchWebApi.WebApi.genruntimeconfig.cache
 C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Presentation\JobSearchWebApi.WebApi\obj\Debug\net8.0\ref\JobSearchWebApi.WebApi.dll
+C:\Users\Nicat\OneDrive\Рабочий стол\JobSearchWebApi\JobSearchWebApi\src\Presentation\JobSearchWebApi.WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -5,7 +5,6 @@ using JobSearchWebApi.Application.Features.Commands.StaffCommand.CreateStaff;
 using JobSearchWebApi.Application.Features.Queries.IndustryQuery.GetAllIndustry;
 using JobSearchWebApi.Application.Features.Queries.IndustryQuery.GetByIdIndustry;
 using JobSearchWebApi.Application.Repositories.IndustryRepository;
-using JobSearchWebApi.Application.ViewModels.IndustryViewModels;
 using JobSearchWebApi.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Components.Forms;

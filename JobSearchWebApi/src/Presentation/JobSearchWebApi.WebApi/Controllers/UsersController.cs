@@ -1,6 +1,7 @@
 ﻿using JobSearchWebApi.Application.Features.Commands.UserCommand.CreateUser;
 using JobSearchWebApi.Application.Features.Commands.UserCommand.LoginUser;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -39,10 +40,10 @@ namespace JobSearchWebApi.WebApi.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Login(LoginUserCommandRequest request)
+        public async Task<IActionResult> Login([FromBody]LoginUserCommandRequest request)
         {
             var response = await _mediator.Send(request);
-            return Ok(response);
+            return Ok(new { Data = response, Message = response.Message});
         }
     }
 }

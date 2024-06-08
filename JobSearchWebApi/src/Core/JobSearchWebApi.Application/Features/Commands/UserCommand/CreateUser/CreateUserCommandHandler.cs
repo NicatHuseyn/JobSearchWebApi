@@ -44,7 +44,7 @@ namespace JobSearchWebApi.Application.Features.Commands.UserCommand.CreateUser
             {
                 foreach (var error in result.Errors)
                 {
-                    sb.AppendLine($"Code:{error.Code} Message:${error.Description}");
+                    sb.AppendLine($"Code:{error.Code} Message:{error.Description}");
                 }
                 return new CreateUserCommandResponse
                 {
